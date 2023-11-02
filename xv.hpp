@@ -127,7 +127,7 @@ class xval
     T k;
 
 public:
-    xval(T _v)
+    __forceinline xval(T _v)
     {
         srand(time(NULL));
 
@@ -136,12 +136,17 @@ public:
         set(_v);
     }
 
-    xval(T _v, e_cypher_mode _m)
+    __forceinline xval(T _v, e_cypher_mode _m)
     {
         srand(time(NULL));
 
         m = _m;
         k = common<T>::rand_int(0x0001000000, 0xFFFFFFFFFF);
+        set(_v);
+    }
+
+    void operator =(const T _v)
+    {
         set(_v);
     }
 
@@ -158,6 +163,8 @@ public:
         case e_cypher_mode::XOR3:
             return __xv_e_3<T>::decrypt(v, k);
         }
+
+        return 0;
     }
 
     __forceinline void set(T _v)
