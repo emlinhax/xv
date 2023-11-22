@@ -1,7 +1,7 @@
 # xv
 single-header pointer/value encryption
 
-c++ 17 or higher needed
+no external dependencies required
 
 example:
 ```cpp
