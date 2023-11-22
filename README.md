@@ -7,7 +7,7 @@ example:
 ```cpp
 struct player_t
 {
-    xval<float> health;
+    xv::xval<float> health;
 };
 
 //...
