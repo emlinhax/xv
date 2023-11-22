@@ -5,6 +5,16 @@ c++ 17 or higher needed
 
 example:
 ```cpp
-xval val = xval<int>(1337);
-std::cout << val.get() << std::endl;
+struct player_t
+{
+    xval<float> health;
+};
+
+//...
+
+player_t p;
+p.health = 1337;
+
+printf("player health (encrypted): %.2f\n", p.health);
+printf("player health (decrypted): %.2f\n", p.health.get());
 ```
