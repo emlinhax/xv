@@ -4,7 +4,7 @@ single-header pointer/value encryption
 pros:
 - randomizes the algorithm for each variable to make analysis more difficult
 - no external dependencies required
-- 
+
 cons:
 - uses rand() for key generation and algorithm selection (will be replaced later)
 
