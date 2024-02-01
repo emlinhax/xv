@@ -1,7 +1,8 @@
 # xv
 single-header pointer/value encryption
 
-no external dependencies required
+- randomizes the algorithm for each variable so it never looks the same
+- no external dependencies required
 
 example:
 ```cpp
