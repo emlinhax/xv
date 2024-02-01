@@ -9,7 +9,7 @@ cons:
 - uses rand() for key generation and algorithm selection (will be replaced later)
 
 
-example:
+ 
 ```cpp
 struct player_t
 {
