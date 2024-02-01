@@ -1,7 +1,7 @@
 # xv
 single-header pointer/value encryption
 
-- randomizes the algorithm for each variable so it never looks the same
+- randomizes the algorithm for each variable to make analysis more difficult
 - no external dependencies required
 
 example:
